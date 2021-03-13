@@ -1,6 +1,38 @@
 .cabecalho-container{
     width: 100%;
     height: 150px;
-    background-color: bisque;
+    background-color: white;
     padding: 10px;
+    display: flex;
+    flex-direction: row;
+    box-sizing: border-box;
+}
+
+.logo-area{
+    height: 100%;
+    width: 30%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.provisorio{
+    width: 70%;
+    height: 100%;
+}
+
+.aura-logo{
+    font-family: serif;
+    font-weight: 400;
+    color: rgb(70, 70, 70);
+    font-size: 55px;
+}
+
+.escola-logo{
+    font-family: 'Open Sans', sans-serif;
+    font-weight: 300;
+    color: rgb(70, 70, 70);
+    font-size: 25px;
+    margin-top: -15px;
 }
