@@ -6,6 +6,8 @@
     display: flex;
     flex-direction: row;
     box-sizing: border-box;
+
+    margin-bottom: 20px;
 }
 
 .logo-area{
@@ -36,6 +38,7 @@
 .navegacao-area{
     width: 70%;
     height: 100%;
+
 }
 
 .navegacao-ul{
@@ -59,4 +62,16 @@
     text-decoration: none;
     color: rgba(0, 0, 0, 0.767);
     font-size: 20px;
+    text-shadow: 5px 5px 5px rgba(0, 0, 0, 0.192);
+}
+
+.navegacao-li a:hover{
+    animation-name: navegacao-a_hover;
+    animation-duration: 300ms;
+    animation-fill-mode: both;
+}
+
+@keyframes navegacao-a_hover{
+    0%{text-shadow: 5px 5px 5px rgba(0, 0, 0, 0.192)}
+    100%{text-shadow: 5px 5px 10px rgba(0, 0, 0, 0.822)}
 }
