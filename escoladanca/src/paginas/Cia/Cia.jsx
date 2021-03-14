@@ -1,8 +1,8 @@
 import React from 'react';
-import './Home.css'
-import '../paginas.css'
+import '../paginas.css';
+import './Cia.css'
 
-const Home = () => {
+const Cia = () => {
     return(
         <div className='page-area'>
             <div className='container'>
@@ -12,4 +12,4 @@ const Home = () => {
     )
 }
 
-export default Home;
+export default Cia;

@@ -1,8 +1,8 @@
 import React from 'react';
-import './Home.css'
-import '../paginas.css'
+import '../paginas.css';
+import './Sobre.css'
 
-const Home = () => {
+const Sobre = () => {
     return(
         <div className='page-area'>
             <div className='container'>
@@ -12,4 +12,4 @@ const Home = () => {
     )
 }
 
-export default Home;
+export default Sobre;
