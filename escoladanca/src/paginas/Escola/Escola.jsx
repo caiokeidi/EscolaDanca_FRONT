@@ -6,7 +6,7 @@ const Escola = () => {
     return(
         <div className='page-area'>
             <div className='container'>
-                
+                <h1>A Escola</h1>
             </div>
         </div>
     )

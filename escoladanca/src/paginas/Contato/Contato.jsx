@@ -6,7 +6,7 @@ const Contato = () => {
     return(
         <div className='page-area'>
             <div className='container'>
-                
+                <h1>Contato</h1>
             </div>
         </div>
     )

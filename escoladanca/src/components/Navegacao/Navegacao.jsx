@@ -1,15 +1,18 @@
 import React from 'react';
+import {
+    Link
+  } from "react-router-dom";
 import '../Cabecalho.css'
 
 const Navegacao = () => {
     return(
         <div className='navegacao-area'>
             <ul className='navegacao-ul'>
-                <li key='teste1' className='navegacao-li'><a href='http://google.com'>HOME</a></li>
-                <li key='teste2' className='navegacao-li'><a href='http://google.com'>CURSOS</a></li>
-                <li key='teste3' className='navegacao-li'><a href='http://google.com'>CIA</a></li>
-                <li key='teste4' className='navegacao-li'><a href='http://google.com'>A ESCOLA</a></li>
-                <li key='teste5' className='navegacao-li'><a href='http://google.com'>CONTATO</a></li>
+                <li key='teste1' className='navegacao-li'><Link to='/'>HOME</Link></li>
+                <li key='teste2' className='navegacao-li'><Link to='/escola'>A ESCOLA</Link></li>
+                <li key='teste3' className='navegacao-li'><Link to='/cia'>CIA</Link></li>
+                <li key='teste4' className='navegacao-li'><Link to='/cursos'>CURSOS</Link></li>
+                <li key='teste5' className='navegacao-li'><Link to='/contato'>CONTATO</Link></li>
             </ul>
         </div>
     )

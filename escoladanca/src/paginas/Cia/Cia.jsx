@@ -6,7 +6,7 @@ const Cia = () => {
     return(
         <div className='page-area'>
             <div className='container'>
-                
+                <h1>Cia</h1>
             </div>
         </div>
     )
