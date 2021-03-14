@@ -75,3 +75,7 @@
     0%{text-shadow: 5px 5px 5px rgba(0, 0, 0, 0.192)}
     100%{text-shadow: 5px 5px 10px rgba(0, 0, 0, 0.822)}
 }
+
+.li-area-privada{
+    font-weight: 600;
+}
