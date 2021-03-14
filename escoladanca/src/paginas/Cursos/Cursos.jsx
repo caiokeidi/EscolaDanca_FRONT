@@ -1,8 +1,8 @@
 import React from 'react';
 import '../paginas.css';
-import './Sobre.css'
+import './Cursos.css'
 
-const Sobre = () => {
+const Cursos = () => {
     return(
         <div className='page-area'>
             <div className='container'>
@@ -12,4 +12,4 @@ const Sobre = () => {
     )
 }
 
-export default Sobre;
+export default Cursos;
