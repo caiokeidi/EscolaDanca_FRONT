@@ -1,5 +1,6 @@
 import React from 'react';
-import './Cabecalho.css'
+import '../Cabecalho.css'
+import Navegacao from '../Navegacao/Navegacao';
 
 
 const Cabecalho = () => {
@@ -9,7 +10,7 @@ const Cabecalho = () => {
                 <div className='aura-logo'>AURA</div>
                 <div className='escola-logo'>estúdio de dança</div>
             </div>
-            <div className='provisorio'></div>
+            <Navegacao/>
         </div>
     );
 }
