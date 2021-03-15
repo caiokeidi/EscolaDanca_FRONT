@@ -7,6 +7,7 @@ import Escola from "./paginas/Escola/Escola";
 import Cia from "./paginas/Cia/Cia";
 import Cursos from "./paginas/Cursos/Cursos";
 import Contato from "./paginas/Contato/Contato";
+import Privado from "./paginas/Privado/Privado";
 
 function App() {
   return (
@@ -27,6 +28,9 @@ function App() {
         </Route>
         <Route exact path='/contato'>
           <Contato/>
+        </Route>
+        <Route path='/privado'>
+          <Privado/>
         </Route>
       </Switch>
       <Footer />

@@ -13,7 +13,7 @@ const Navegacao = () => {
                 <li key='teste3' className='navegacao-li'><Link to='/cia'>CIA</Link></li>
                 <li key='teste4' className='navegacao-li'><Link to='/cursos'>CURSOS</Link></li>
                 <li key='teste5' className='navegacao-li'><Link to='/contato'>CONTATO</Link></li>
-                <li key='teste5' className='navegacao-li li-area-privada'><Link to='/contato'>ÁREA PRIVADA</Link></li>
+                <li key='teste5' className='navegacao-li li-area-privada'><Link to='/privado/login'>ÁREA PRIVADA</Link></li>
             </ul>
 
         </div>
