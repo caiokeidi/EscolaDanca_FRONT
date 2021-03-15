@@ -61,6 +61,15 @@
     margin: 15px 0px;
 }
 
+.page-text-p2{
+    text-align: justify;
+    text-indent: 50px;
+    font-size: 25px;
+    font-family: 'Open Sans', sans-serif;
+    font-weight: 400;
+    margin: 15px 0px;
+}
+
 /* IMAGES */
 
 .page-mainImage-area{
@@ -82,4 +91,13 @@
     height: 250px;
     object-fit:cover;
     box-shadow: 10px 10px 10px rgba(0, 0, 0, 0.185);
+}
+
+.page-mainImage-img3{
+    width: 80%;
+    height: 350px;
+    object-fit:cover;
+    object-position: 0% 30%;
+    box-shadow: 10px 10px 10px rgba(0, 0, 0, 0.185);
+
 }
