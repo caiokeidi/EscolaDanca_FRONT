@@ -7,7 +7,79 @@
 
 .container{
     width: 90%;
-    height: 800px;
     margin: 10px 0px;
     background-color: white;
+    padding: 40px;
+    border-radius: 20px;
+
+    animation-name: container-anim;
+    animation-duration: 1s;
+}
+
+@keyframes container-anim{
+    0%{position: relative; left: -1024px;}
+    100%{position: relative; left: 0px;}
+}
+
+.container div{
+    animation-name: container-div-anim;
+    animation-duration: 1.2s;
+}
+
+@keyframes container-div-anim{
+    0%{opacity:0}
+    40%{opacity:0}
+    100%{opacity:1}
+}
+
+/* TITLE */
+
+.page-title-area{
+    width: 100%;
+    text-align: center;
+    padding: 10px;
+}
+
+.page-title-h1{
+    font-size: 45px;
+    color: #B3A07F;
+}
+
+/* TEXT */
+
+.page-text-area{
+    padding: 15px;
+    margin: 15px 0px;
+}
+
+.page-text-p1{
+    text-align: justify;
+    text-indent: 50px;
+    font-size: 25px;
+    font-family: 'Open Sans', sans-serif;
+    font-weight: 300;
+    margin: 15px 0px;
+}
+
+/* IMAGES */
+
+.page-mainImage-area{
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    margin: 20px 0px;
+}
+
+.page-mainImage-img{
+    width: 90%;
+    height: 150px;
+    object-fit:cover;
+    box-shadow: 10px 10px 10px rgba(0, 0, 0, 0.185);
+}
+
+.page-mainImage-img2{
+    width: 70%;
+    height: 250px;
+    object-fit:cover;
+    box-shadow: 10px 10px 10px rgba(0, 0, 0, 0.185);
 }
