@@ -8,17 +8,37 @@
 .container{
     width: 90%;
     margin: 10px 0px;
-    background-color: white;
+    background-color: rgba(255, 255, 255, 0.829);
     padding: 40px;
     border-radius: 20px;
+}
 
-    animation-name: container-anim;
+/*##################*/
+/*##################*/
+/*### ANIMATIONS ###*/
+/*##################*/
+/*##################*/
+
+/* Move da esquerda para direita */
+.anim1{
+    animation-name: container-anim1;
     animation-duration: 1s;
 }
 
-@keyframes container-anim{
+@keyframes container-anim1{
     0%{position: relative; left: -1024px;}
     100%{position: relative; left: 0px;}
+}
+
+/* Opacidade 0 para 1 */
+.anim2{
+    animation-name: container-anim2;
+    animation-duration: 1s;
+}
+
+@keyframes container-anim2{
+    0%{opacity: 0;}
+    100%{opacity: 1}
 }
 
 .container div{
@@ -32,7 +52,11 @@
     100%{opacity:1}
 }
 
-/* TITLE */
+/*##################*/
+/*##################*/
+/*###    TITLE   ###*/
+/*##################*/
+/*##################*/
 
 .page-title-area{
     width: 100%;
@@ -45,7 +69,11 @@
     color: #B3A07F;
 }
 
-/* TEXT */
+/*##################*/
+/*##################*/
+/*###    TEXT    ###*/
+/*##################*/
+/*##################*/
 
 .page-text-area{
     padding: 15px;
@@ -70,7 +98,11 @@
     margin: 15px 0px;
 }
 
-/* IMAGES */
+/*##################*/
+/*##################*/
+/*###   IMAGES   ###*/
+/*##################*/
+/*##################*/
 
 .page-mainImage-area{
     width: 100%;

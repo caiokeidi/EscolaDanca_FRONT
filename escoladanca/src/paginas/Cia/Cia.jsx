@@ -6,7 +6,7 @@ import img from "../../assets/img/contemporaneo1.png";
 const Cia = () => {
   return (
     <div className="page-area">
-      <div className="container">
+      <div className="container anim2">
         <div className="page-title-area">
           <h1 className="page-title-h1">CIA DE DANÇA</h1>
         </div>
