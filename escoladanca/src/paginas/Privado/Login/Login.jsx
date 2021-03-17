@@ -2,6 +2,9 @@ import React, { useEffect, useState } from "react";
 import { login } from "../../../axios/axios";
 import LoginForm from "../../../components/LoginForm";
 import "../../paginas.css";
+import {
+  Link
+} from "react-router-dom";
 
 const Login = (props) => {
   const setEstado = props.setEstado;
@@ -33,12 +36,19 @@ const Login = (props) => {
       });
   };
 
+  const handle_logout = () => {
+    localStorage.removeItem('token');
+    setEstado({ logged_in: false, username: '', displayed_form: "", });
+  };
+
   return (
     <div className="page-area">
       <div className="container">
         <h1>Login</h1>
 
         <LoginForm handle_login={handle_login} />
+        <button onClick={handle_logout}>LOGOUT</button>
+        <button><Link  to='cadastro/'>CADASTRAR ALUNO</Link></button>
       </div>
     </div>
   );

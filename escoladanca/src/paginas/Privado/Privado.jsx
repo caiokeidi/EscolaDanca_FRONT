@@ -1,5 +1,6 @@
 import React from 'react';
 import { Route, Switch,  useRouteMatch, } from "react-router-dom";
+import Cadastro from './Cadastro/Cadastro';
 import Login from './Login/Login';
 
 
@@ -13,6 +14,10 @@ const Privado = (props) => {
         <Switch>
             <Route path={`${path}/login`}>
                 <Login setEstado={setEstado} />
+            </Route>
+            <Route path={`${path}/cadastro`}>
+                
+                <Cadastro setEstado={setEstado} />
             </Route>
         </Switch>
     )
