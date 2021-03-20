@@ -26,8 +26,8 @@
 }
 
 @keyframes container-anim1{
-    0%{position: relative; left: -1024px;}
-    100%{position: relative; left: 0px;}
+    0%{position: relative; left: -1024px; opacity: 0;}
+    100%{position: relative; left: 0px; opacity: 1}
 }
 
 /* Opacidade 0 para 1 */
@@ -40,11 +40,11 @@
     0%{opacity: 0;}
     100%{opacity: 1}
 }
-
+/* 
 .container div{
     animation-name: container-div-anim;
     animation-duration: 1.2s;
-}
+} */
 
 @keyframes container-div-anim{
     0%{opacity:0}
@@ -143,5 +143,11 @@
 .page-content-area{
     padding: 15px;
     margin: 20px 0px;
+    display: flex;
+    flex-wrap: wrap;
+
+    justify-content: center;
+    
+
 }
 
