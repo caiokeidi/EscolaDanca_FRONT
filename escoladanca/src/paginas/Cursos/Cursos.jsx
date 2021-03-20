@@ -1,25 +1,24 @@
-import {getCursos} from '../../axios/axios'
 import React, { useEffect, useState } from 'react';
 import '../paginas.css';
 import './Cursos.css'
 
-const Cursos = () => {
-    const[cursos, setCursos] = useState([{nome: ''}])
-
-    useEffect(() => {
-        getCursos(setCursos, {headers: {
-            Authorization: `JWT ${localStorage.getItem("token")}`,
-          },})
-        
-    }, [])
-
-    console.log(cursos)
+const Cursos = (props) => {
+    
+    const img = require("../../assets/img/dancadesalao1.png")
 
     return(
         <div className='page-area'>
             <div className='container'>
-                <h1>Cursos</h1>
-                <p>{cursos[0].nome}</p>
+                <div className='page-title-area'>
+                    <h1>Cursos</h1>
+                </div>
+                <div className='page-content-area'>
+                    <div className='card-curso'>
+                        <h2 className='card-title'>Título</h2>
+                        <img className='card-img' src={img.default} alt='imagem dança de salão'/>
+                    </div>
+                </div>
+                
             </div>
         </div>
     )

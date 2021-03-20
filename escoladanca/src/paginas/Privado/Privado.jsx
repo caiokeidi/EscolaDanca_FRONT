@@ -16,7 +16,6 @@ const Privado = (props) => {
                 <Login setEstado={setEstado} />
             </Route>
             <Route path={`${path}/cadastro`}>
-                
                 <Cadastro setEstado={setEstado} />
             </Route>
         </Switch>

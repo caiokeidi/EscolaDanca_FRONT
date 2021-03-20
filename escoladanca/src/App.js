@@ -11,42 +11,9 @@ import Privado from "./paginas/Privado/Privado";
 import { useEffect, useState } from "react";
 
 function App() {
-  const [estado, setEstado] = useState({
-    displayed_form: "",
-    logged_in: haveToken(),
-    username: "",
-  });
+  
+  
 
-  function haveToken() {
-    if (
-      localStorage.getItem("token") &&
-      localStorage.getItem("token") != "undefined"
-    ) {
-      return true;
-    } else {
-      return false;
-    }
-  }
-
-  console.log('estado' , estado)
-
-  useEffect(() => {
-    if (estado.logged_in) {
-      fetch("http://localhost:8000/aluno/current_user/", {
-        headers: {
-          Authorization: `JWT ${localStorage.getItem("token")}`,
-        },
-      })
-        .then((res) => res.json())
-        .then((json) => {
-          setEstado({
-            username: json.username,
-            displayed_form: "",
-            logged_in: true,
-          });
-        });
-    }
-  }, []);
 
   return (
     <Router>
@@ -62,13 +29,10 @@ function App() {
           <Cia />
         </Route>
         <Route path="/cursos">
-          <Cursos />
+          <Cursos/>
         </Route>
         <Route exact path="/contato">
           <Contato />
-        </Route>
-        <Route path="/privado">
-          <Privado estado={estado} setEstado={setEstado} />
         </Route>
       </Switch>
       <Footer />
