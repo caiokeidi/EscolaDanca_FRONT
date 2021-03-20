@@ -4,7 +4,7 @@ import './Cursos.css'
 
 const Cursos = (props) => {
     
-    const img = require("../../assets/img/dancadesalao1.png")
+    const img = require("../../assets/img/ballet1.png")
 
     return(
         <div className='page-area'>
@@ -14,7 +14,10 @@ const Cursos = (props) => {
                 </div>
                 <div className='page-content-area'>
                     <div className='card-curso'>
-                        <h2 className='card-title'>Título</h2>
+                        <div className='card-over-area'>
+                            <h2 className='card-title'>Título</h2>
+                        </div>
+                        
                         <img className='card-img' src={img.default} alt='imagem dança de salão'/>
                     </div>
                 </div>
