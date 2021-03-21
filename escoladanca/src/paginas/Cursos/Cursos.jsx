@@ -1,3 +1,4 @@
+import { array } from "prop-types";
 import React, { useEffect, useState } from "react";
 import "../paginas.css";
 import "./Cursos.css";
@@ -14,6 +15,21 @@ const Cursos = (props) => {
     },
   ]);
 
+  const [imgs, setImgs] = useState([{
+    "base64_image":'',
+    "id": 1,
+    "curso": 1
+}])
+
+  useEffect(() => {
+    fetch(`http://localhost:8000/image/`).then((res) =>
+      res.json().then((array) => {
+        setImgs(array)
+      })
+    );
+  }, [])
+  
+
   useEffect(() => {
     fetch("http://localhost:8000/cursos/")
       .then((res) => res.json())
@@ -28,18 +44,30 @@ const Cursos = (props) => {
             ativo: curso.ativo,
           };
 
+          console.log(dictCursos);
           arrayCursos.push(dictCursos);
         });
 
-        setCursos(arrayCursos)
+        setCursos(arrayCursos);
       });
+
+    console.log(cursos);
   }, []);
 
   const img = require("../../assets/img/ballet1.png");
 
+  const buscaImagemCurso = async (id) => {
+    await fetch(`http://localhost:8000/image/`).then((res) =>
+      res.json().then((array) => {
+        console.log(array);
+        return array[0];
+      })
+    );
+  };
+
   const returnCards = (curso) => {
     return (
-      <div className="card-curso">
+      <div className="card-curso" key={curso.id}>
         <div className="card-over-area">
           <h2 className="card-title">{curso.nome}</h2>
         </div>
