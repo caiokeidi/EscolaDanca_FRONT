@@ -72,14 +72,36 @@ const Cursos = (props) => {
           <h2 className="card-title">{curso.nome}</h2>
         </div>
 
-        <img
-          className="card-img"
-          src={img.default}
-          alt="imagem dança de salão"
-        />
+        {returnImg(curso.id)}
+        
       </div>
     );
   };
+
+  const returnImg = (id) => {
+    const img64 = imgs.filter((item) => {return(item.id == id)})
+    if(!img64[0]){
+      return(
+        <img
+            className="card-img"
+            src={img.default}
+            alt="imagem dança de salão"
+          />
+      )
+    }else{
+      const data = img64[0]['base64_image']
+      return(
+        <img
+            className="card-img"
+            src={`data:image/jpeg;base64,${data}`}
+            alt="imagem dança de salão"
+          />
+      )
+    }
+    
+  }
+
+  
 
   return (
     <div className="page-area">
