@@ -107,7 +107,7 @@ const Cursos = (props) => {
     <div className="page-area">
       <div className="container anim1">
         <div className="page-title-area">
-          <h1>Cursos</h1>
+          <h1 className="page-title-h1">Cursos</h1>
         </div>
         <div className="page-content-area">
           {cursos.map((curso) => {

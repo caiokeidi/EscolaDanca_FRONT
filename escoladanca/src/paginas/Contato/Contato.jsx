@@ -7,7 +7,7 @@ const Contato = () => {
         <div className='page-area'>
             <div className='container anim1'>
                 <div className='page-title-area'>
-                    <h1>Contato</h1>
+                    <h1 className="page-title-h1">Contato</h1>
                 </div>
                 <div className="page-text-area">
                 <p className="page-text-p1">
