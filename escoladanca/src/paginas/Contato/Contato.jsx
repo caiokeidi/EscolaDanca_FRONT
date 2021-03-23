@@ -16,6 +16,17 @@ const Contato = () => {
                     repellendus! Est quod necessitatibus quibusdam veritatis architecto
                     nisi earum optio incidunt quaerat. Quo.
                 </p>
+
+                
+                <form action='' className='page-form'>
+                    <div className='page-form-row'>
+                        <label to='nome'>Nome: </label>
+                        <input type='text' name='nome' className='page-form-field'></input>
+                    </div>
+                    
+                </form>
+               
+
                 </div>
                 
             </div>
