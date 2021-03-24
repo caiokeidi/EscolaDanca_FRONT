@@ -16,3 +16,38 @@
     justify-content: center;
     align-items: center;
 }
+
+.page-form-block{
+    width: 100%;
+    display: flex;
+    margin: 15px;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.page-form-block label{
+    font-size: 20px;
+    font-weight: 600;
+}
+
+.page-form-field{
+    width: 60%;
+    height: 30px;
+    font-size: 15px;
+    text-align: center;
+    padding: 5px;
+}
+
+.page-form-textarea{
+    width: 80%;
+    height: 150px;
+    font-size: 15px;
+    text-align: center;
+    padding: 5px;
+}
+
+.page-form-submit{
+    padding: 10px 15px;
+    font-size: 15px;
+}
