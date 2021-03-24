@@ -17,14 +17,28 @@ const Contato = () => {
                     nisi earum optio incidunt quaerat. Quo.
                 </p>
 
+                <div className='page-form-area'>
+                    <form action='' className='page-form'>
+                        <div className='page-form-row'>
+                            <label to='nome'>Nome: </label>
+                            <input type='text' name='nome' className='page-form-field'></input>
+                        </div>
+                        <div className='page-form-row'>
+                            <label to='email'>Email: </label>
+                            <input type='email' name='email' className='page-form-field'></input>
+                        </div>
+                        <div className='page-form-row'>
+                            <label to='assunto'>Assunto: </label>
+                            <input type='text' name='assunto' className='page-form-field'></input>
+                        </div>
+                        <div className='page-form-row'>
+                            <label to='mensagem'>Mensagem: </label>
+                            <textarea name='mensagem' className='page-form-textarea'></textarea>
+                        </div>
+                    </form>
+
+                </div>
                 
-                <form action='' className='page-form'>
-                    <div className='page-form-row'>
-                        <label to='nome'>Nome: </label>
-                        <input type='text' name='nome' className='page-form-field'></input>
-                    </div>
-                    
-                </form>
                
 
                 </div>
